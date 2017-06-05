@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Cookie Order Form</title>
+</head>
+<body>
+    <h1>Cookie Order Form</h1>
+    <form name="cookieForm" action="">
+    
+        <p>Please enter the name for the order:
+            <input type="text" name="nameForOrder" id="nameForOrder" />
+        </p>
+
+        <p>Please enter an email for the order:
+            <input type="text" name="emailForOrder" id="emailForOrder" />
+        </p>
+        
+        <p>Please select your cookie flavor:
+            
+            <select name="cookieFlavor" id="cookieFlavor" size="1">
+                <option value = "0" selected="selected">---</option>
+                <option value="1.5">Chocolate Chip ($1.50 each)</option>
+                <option value="1.75">Snickerdoodle ($1.75 each)</option>
+                <option value="1.25">Peanut Butter ($1.25 each)</option>
+                <option value="1.5">Oatmeal ($1.50 each)</option>
+                <option value="1">Sugar ($1.00 each)</option>
+                <option value="1.75">Gingerbread ($1.75 each)</option>
+            </select>
+        </p>
+            
+        <p>Please select the amount you want:
+            <input type="radio" name="cookieNumber" id="one" value="1" checked="checked"  />
+            <label>One</label>
+            <input type="radio" name="cookieNumber" id="half-dozen" value="6" />
+            <label>Half a Dozen</label>
+            <input type="radio" name="cookieNumber" id="dozen" value="12" />
+            <label>Dozen</label>
+        </p>
+        
+    
+        <p>Please check any additional options you need:
+            <input type="checkbox" name="milk" id="milk" value="5" />
+            <label>Carton of Milk ($5.00)</label>
+            <input type="checkbox" name="napkins" id="napkins" value="2" />
+            <label>Napkins ($2.00)</label>
+            <input type="checkbox" name="plates" id="plates" value="3" />
+            <label>Plates ($3.00)</label>
+            <input type="checkbox" name="cups" id="cups" value="3" />
+            <label>Cups ($3.00)</label>
+        </p>
+        
+        <p>Will you pickup your order at the store (free) or have your order shipped ($5 flat rate)?
+            <input type="radio" name="deliveryPickup" checked="checked" value="5" />
+            <label>Delivery</label>
+            <input type="radio" name="deliveryPickup" value="0" />
+            <label>Pickup</label>
+        </p>
+        
+        <p>If delivery is selected, please enter the address to ship your order to: 
+            <p>
+            <label>Street: </label>
+            <input type="text" name="street" id="street" /><br />
+            </p>
+            
+            <p>
+            <label>City: </label>
+            <input type="text" name="city" id="city" />
+            </p>
+            
+            <p>
+            <label> State: </label>
+            <input type="text" name="state" id="state" size="2" maxlength="2" />
+            
+            <label>Zip Code: </label>
+            <input type="text" name="zip" id="zip" size="5" maxlength="5" />
+            </p>
+        </p>
+        
+        <h3>Order Total: <span id="orderTotal"></span>
+        </h3>
+        
+        <p>
+            <input type="button" name="submitOrder" id="submitOrder" value="Submit Order" />
+            <input type="reset" name="resetOrder" id="resetOrder" value="Reset" />
+        </p>
+    </form>
+    <script src="cookieApp.js"></script>
+</body>
+</html>
