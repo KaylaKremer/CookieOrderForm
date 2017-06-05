@@ -1,4 +1,4 @@
-//Imports modules for Selenium Webdriver, File System, Assert, and Faker.
+//Imports packages for Selenium Webdriver, File System, Assert, and Faker.
 const webdriver = require('selenium-webdriver');
 const test = require('selenium-webdriver/testing');
 const fs = require('fs');
