@@ -13,7 +13,7 @@ const until = webdriver.until;
 //Befor any tests are run, the driver retrieves the cookieForm.html file and resizes the window to 1024 x 768. A timeout of 10 seconds is set to prevent any error messages when running the tests. 
 test.before(function(){
     this.timeout(10000);
-    driver.get('file:///C:/Users/Kayla/Desktop/NEW%20Cookie%20Order%20Form/cookieForm.html');
+    driver.get('Path_to_file_on_your_computer_goes_here/cookieForm.html');
     driver.manage().window().setSize(1024, 768);
 });
 
